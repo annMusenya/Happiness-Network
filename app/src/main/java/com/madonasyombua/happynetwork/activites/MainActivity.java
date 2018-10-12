@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.madonasyombua.happynetwork.R;
 import com.madonasyombua.happynetwork.databinding.ActivityMainBinding;
 import com.madonasyombua.happynetwork.fragments.SignInFragment;
+import com.scwang.wave.MultiWaveHeader;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -22,9 +23,20 @@ public class MainActivity extends AppCompatActivity {
 
            if (savedInstanceState == null)
             setFragment(new SignInFragment());
+             waveHeader(false);
+
+
     }
 
-
+    void waveHeader(boolean show) {
+        if (binding.waveHeader != null) {
+            if (show)
+                binding.waveHeader.start();
+            else {
+                binding.waveHeader.stop();
+            }
+        }
+    }
 
     void setFragment(Fragment fragment) {
         getSupportFragmentManager()
