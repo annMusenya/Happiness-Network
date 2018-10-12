@@ -3,4 +3,12 @@
     <string name="smile">Smile</string>
     <string name="terms">Terms of Use</string>
     <string name="policy">Privacy Policy</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_fb">fb image</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="create_hint">create your happy account</string>
+    <string name="sign_up">Sign up</string>
+    <string name="login">Login in</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
 </resources>
