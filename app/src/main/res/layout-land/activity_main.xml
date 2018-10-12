@@ -8,7 +8,7 @@
         android:baselineAligned="false"
         android:fitsSystemWindows="true"
         android:orientation="horizontal"
-        tools:context=".ui.login.LoginActivity">
+        tools:context=".MainActivity">
 
         <LinearLayout
             android:layout_width="300dp"

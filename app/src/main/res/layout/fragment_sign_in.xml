@@ -54,9 +54,9 @@
                 android:paddingEnd="0dp"
                 android:paddingBottom="8dp"
                 android:singleLine="true"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="@dimen/ten_dp"
                 android:drawableLeft="@drawable/email_text_drawable"
-                android:paddingLeft="10dp"
+                android:paddingLeft="@dimen/ten_dp"
                 android:paddingRight="0dp" />
         </android.support.design.widget.TextInputLayout>
 
