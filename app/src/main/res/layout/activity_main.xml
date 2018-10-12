@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context=".MainActivity">
+        tools:context=".activites.MainActivity">
 
         <com.scwang.wave.MultiWaveHeader
             android:id="@+id/waveHeader"
@@ -32,11 +32,12 @@
             android:contentDescription="@string/smile"
             android:src="@drawable/smile" />
 
-        <FrameLayout
+       <FrameLayout
             android:id="@+id/fragmentContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="200dp" />
+
 
     </FrameLayout>
 
