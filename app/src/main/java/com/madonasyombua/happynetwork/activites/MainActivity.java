@@ -24,10 +24,7 @@ public class MainActivity extends AppCompatActivity {
            if (savedInstanceState == null)
             setFragment(new SignInFragment());
 
-
-
     }
-
 
     void setFragment(Fragment fragment) {
         getSupportFragmentManager()
@@ -36,4 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.fragmentContainer, fragment)
                 .commit();
     }
+
+
 }
