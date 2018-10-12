@@ -1,18 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".ui.login.LoginActivity">
 
-</android.support.constraint.ConstraintLayout>
+        <com.scwang.wave.MultiWaveHeader
+            android:id="@+id/waveHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleX="-1"
+            android:scaleY="-1"
+            app:mwhCloseColor="@android:color/white"
+            app:mwhColorAlpha="1"
+            app:mwhGradientAngle="90"
+            app:mwhIsRunning="false"
+            app:mwhProgress="1"
+            app:mwhStartColor="@android:color/white"
+            app:mwhVelocity="12"
+            app:mwhWaveHeight="100dp"
+            app:mwhWaves="0,150,1,0.6,-26" />
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/sixteen_dp"
+            android:contentDescription="@string/smile"
+            android:src="@drawable/smile" />
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp" />
+
+    </FrameLayout>
+
+</layout>
