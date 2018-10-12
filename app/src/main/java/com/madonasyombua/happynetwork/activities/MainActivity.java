@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.madonasyombua.happynetwork.activites;
+package com.madonasyombua.happynetwork.activities;
 
 import android.databinding.DataBindingUtil;
 import android.support.v4.app.Fragment;
@@ -28,7 +28,7 @@ import com.madonasyombua.happynetwork.fragments.SignInFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-   ActivityMainBinding binding;
+   private ActivityMainBinding binding;
 
 
     @Override
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    void setFragment(Fragment fragment) {
+    private void setFragment(Fragment fragment) {
         getSupportFragmentManager()
                 .beginTransaction()
                 .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
