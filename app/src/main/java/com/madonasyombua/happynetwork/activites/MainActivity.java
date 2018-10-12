@@ -23,20 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
            if (savedInstanceState == null)
             setFragment(new SignInFragment());
-             waveHeader(false);
+
 
 
     }
 
-    void waveHeader(boolean show) {
-        if (binding.waveHeader != null) {
-            if (show)
-                binding.waveHeader.start();
-            else {
-                binding.waveHeader.stop();
-            }
-        }
-    }
 
     void setFragment(Fragment fragment) {
         getSupportFragmentManager()
