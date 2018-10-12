@@ -24,7 +24,8 @@
                 android:layout_marginRight="50dp"
                 android:contentDescription="@string/smile"
                 android:src="@drawable/smile"
-                android:layout_marginEnd="50dp" />
+                android:layout_marginEnd="50dp"
+                tools:ignore="RtlHardcoded" />
 
             <Space
                 android:layout_width="0dp"
@@ -42,7 +43,8 @@
                 android:text="@string/terms"
                 android:textColor="@android:color/white"
                 android:layout_marginRight="50dp"
-                android:drawableRight="@drawable/ic_arrow_forward_black_24dp" />
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                tools:ignore="RtlHardcoded" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -56,7 +58,8 @@
                 android:text="@string/policy"
                 android:textColor="@android:color/white"
                 android:layout_marginRight="50dp"
-                android:drawableRight="@drawable/ic_arrow_forward_black_24dp" />
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                tools:ignore="RtlHardcoded" />
 
         </LinearLayout>
 
