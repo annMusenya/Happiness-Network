@@ -1,0 +1,79 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        tools:context=".ui.login.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/landscape_design"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/sixteen_dp">
+
+            <ImageView
+                android:layout_width="151dp"
+                android:layout_height="124dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="50dp"
+                android:contentDescription="@string/smile"
+                android:src="@drawable/smile"
+                android:layout_marginEnd="50dp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="50dp"
+                android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/terms"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="50dp"
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/policy"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="50dp"
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:fillViewport="true">
+
+            <FrameLayout
+                android:id="@+id/fragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

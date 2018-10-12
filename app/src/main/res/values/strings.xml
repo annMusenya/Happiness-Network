@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Happy Network</string>
     <string name="smile">Smile</string>
+    <string name="terms">Terms of Use</string>
+    <string name="policy">Privacy Policy</string>
 </resources>
