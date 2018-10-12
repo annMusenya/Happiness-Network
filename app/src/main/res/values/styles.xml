@@ -8,7 +8,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="AppTheme.LoginActivityTheme">
+    <style name="AppTheme.MainActivityTheme">
         <item name="android:windowBackground">@drawable/login_bg</item>
         <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
     </style>
